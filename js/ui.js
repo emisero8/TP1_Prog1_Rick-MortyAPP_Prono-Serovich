@@ -13,6 +13,7 @@ export function renderCharacters(characters) {
         return `
             <article class="glass-card">
                 <div class="card-image-wrapper">
+                    <span class="character-id">#${character.id}</span>
                     <img src="${character.image}" alt="${character.name}" loading="lazy" onerror="this.onerror=null; this.src='img/notfound.png';">
                 </div>
                 <div class="card-content">
