@@ -55,6 +55,7 @@ body {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -96,6 +97,70 @@ body {
 main {
     flex: 1;
     padding: 40px 0;
+}
+
+/* --- SEARCH & FILTERS --- */
+.hidden {
+    display: none !important;
+}
+
+.search-glass {
+    background: rgba(11, 14, 20, 0.6);
+    backdrop-filter: var(--glass-blur);
+    border: var(--glass-border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.glass-input, .glass-select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.glass-input {
+    flex: 1;
+}
+
+.glass-input:focus, .glass-select:focus {
+    border-color: var(--portal-green);
+    box-shadow: 0 0 10px rgba(151, 206, 76, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.glass-select {
+    cursor: pointer;
+}
+
+.glass-select option {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filters > * {
+    flex: 1;
+    min-width: 150px;
 }
 
 .grid-layout {

@@ -51,3 +51,15 @@ export function updatePaginationUI(info, currentPage) {
         btnNext.disabled = !info.next;
     }
 }
+
+// Lógica de UI para desplegar los filtros
+document.addEventListener('DOMContentLoaded', () => {
+    const btnToggle = document.getElementById('btn-toggle-filters');
+    const filtersContainer = document.getElementById('filters-container');
+    
+    if (btnToggle && filtersContainer) {
+        btnToggle.addEventListener('click', () => {
+            filtersContainer.classList.toggle('hidden');
+        });
+    }
+});
