@@ -13,7 +13,7 @@ export function renderCharacters(characters) {
         return `
             <article class="glass-card">
                 <div class="card-image-wrapper">
-                    <img src="${character.image}" alt="${character.name}" loading="lazy">
+                    <img src="${character.image}" alt="${character.name}" loading="lazy" onerror="this.onerror=null; this.src='img/notfound.png';">
                 </div>
                 <div class="card-content">
                     <h2>${character.name}</h2>
@@ -34,6 +34,8 @@ export function renderCharacters(characters) {
     }).join('');
 
     grid.innerHTML = htmlString;
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 export function updatePaginationUI(info, currentPage) {

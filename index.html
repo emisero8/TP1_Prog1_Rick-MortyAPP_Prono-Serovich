@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty | Explorer</title>
-    
+
     <!-- Google Fonts: Inter para limpieza, Creepster para toques temáticos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="stars-background"></div>
 
     <header class="header-glass">
         <div class="container">
             <h1 class="glow-text">Rick and Morty</h1>
-            <p class="subtitle">Character Explorer</p>
+            <p class="subtitle">Catálogo de personajes</p>
         </div>
     </header>
 
@@ -48,23 +50,28 @@
         <!-- Paginación Semántica -->
         <nav class="pagination-glass" aria-label="Navegación de páginas">
             <button id="btn-prev" class="btn-portal" disabled>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
                 Anterior
             </button>
-            
+
             <div class="page-info">
                 Página <span id="current-page" class="highlight">1</span> de <span id="total-pages">42</span>
             </div>
 
             <button id="btn-next" class="btn-portal">
                 Siguiente
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6" />
+                </svg>
             </button>
         </nav>
     </main>
 
     <footer>
-        <p>Desarrollado con 💚 por Integrante A e Integrante B</p>
+        <p style="font-style: italic;">Desarrollado por Prono Felipe y Serovich Emilio. 3° "A" DSW-IES 2026.</p>
+        <p>Todos los derechos reservados. </p>
     </footer>
 
     <!-- Scripts separados según requerimiento -->
@@ -72,4 +79,5 @@
     <script src="js/ui.js" type="module"></script>
     <script src="js/main.js" type="module"></script>
 </body>
+
 </html>
