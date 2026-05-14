@@ -1,7 +1,7 @@
 const API_BASE_URL = 'https://rickandmortyapi.com/api';
 
 /**
- * Obtiene los personajes de la API de Rick and Morty.
+ * Recuperamos los personajes de la API de Rick and Morty.
  * @param {number} page - Número de página a consultar.
  * @returns {Promise<Object>} Un objeto con la información (info) y los resultados (results).
  */
