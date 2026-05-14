@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty | Explorer</title>
+    
+    <!-- Google Fonts: Inter para limpieza, Creepster para toques temáticos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="stars-background"></div>
+
+    <header class="header-glass">
+        <div class="container">
+            <h1 class="glow-text">Rick and Morty</h1>
+            <p class="subtitle">Character Explorer</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Grid donde se inyectarán las tarjetas desde JS -->
+        <section id="characters-grid" class="grid-layout">
+            <!-- La estructura de la tarjeta (card) generada por JS será como esta: -->
+            <!--
+            <article class="glass-card">
+                <div class="card-image-wrapper">
+                    <img src="..." alt="Nombre" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h2>Rick Sanchez</h2>
+                    <div class="status-badge">
+                        <span class="status-dot alive"></span> Alive - Human
+                    </div>
+                    <div class="info-group">
+                        <span class="label">Última ubicación conocida:</span>
+                        <p class="value">Citadel of Ricks</p>
+                    </div>
+                </div>
+            </article>
+            -->
+        </section>
+
+        <!-- Paginación Semántica -->
+        <nav class="pagination-glass" aria-label="Navegación de páginas">
+            <button id="btn-prev" class="btn-portal" disabled>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                Anterior
+            </button>
+            
+            <div class="page-info">
+                Página <span id="current-page" class="highlight">1</span> de <span id="total-pages">42</span>
+            </div>
+
+            <button id="btn-next" class="btn-portal">
+                Siguiente
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </nav>
+    </main>
+
+    <footer>
+        <p>Desarrollado con 💚 por Integrante A e Integrante B</p>
+    </footer>
+
+    <!-- Scripts separados según requerimiento -->
+    <script src="js/api.js" type="module"></script>
+    <script src="js/ui.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
