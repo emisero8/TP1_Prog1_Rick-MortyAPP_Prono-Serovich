@@ -360,5 +360,8 @@ footer {
         border-radius: 16px;
         width: 100%;
     }
+    .search-bar {
+        flex-direction: column;
+    }
     .btn-portal { width: 100%; justify-content: center; }
 }
