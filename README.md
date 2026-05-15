@@ -1,6 +1,5 @@
 # Catálogo de personajes de Rick and Morty - Trabajo Práctico N°1 Programación 2.
 
-![Rick and Morty API](https://rickandmortyapi.com/api/character/avatar/1.jpeg)
 
 ## Integrantes del equipo:
 * **Prono Felipe - DNI 43.165.905**
@@ -19,6 +18,15 @@ El proyecto cuenta con un diseño responsivo, utilizando técnicas de CSS modern
 
 ## Capturas del sistema:
 
+1. **Vista General:** Pantalla principal mostrando el catálogo de personajes, junto a la barra de búsqueda y los filtros de búsqueda avanzados. Se enumeró a cada personaje según su ID correspondiente en la carga para poder buscarlos de esa manera también.
+![Vista General](./img/SS-General.png)
+
+2. **Footer:** Pie de página con información básica y botones para controlar la paginación.
+![Footer](./img/SS-Footer.png)
+
+3. **Vista Mobile:** Diseño responsivo adaptado a dispositivos móviles.
+![Vista Mobile](./img/SS-Mobile.png)
+
 ## Cómo correr el proyecto localmente:
 
 1. Clona este repositorio en tu máquina local:
@@ -36,3 +44,5 @@ El proyecto cuenta con un diseño responsivo, utilizando técnicas de CSS modern
 ## Link al deploy:
 
 ## API utilizada - créditos:
+
+Los datos y las imágenes de los personajes utilizados en este catálogo son consumidos desde [The Rick and Morty API](https://rickandmortyapi.com/). Agradecemos a sus creadores (Axel Fuhrmann y contribuyentes) por mantener la API pública y de código abierto, que resulta de gran utilidad para el desarrollo y práctica de aplicaciones web.
