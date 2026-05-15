@@ -43,6 +43,8 @@ El proyecto cuenta con un diseño responsivo, utilizando técnicas de CSS modern
 
 ## Link al deploy:
 
+Link al proyecto en [GitHub Pages](https://emisero8.github.io/TP1_Prog1_Rick-MortyAPP_Prono-Serovich/) (click al texto en azul).
+
 ## API utilizada - créditos:
 
 Los datos y las imágenes de los personajes utilizados en este catálogo son consumidos desde [The Rick and Morty API](https://rickandmortyapi.com/). Agradecemos a sus creadores (Axel Fuhrmann y contribuyentes) por mantener la API pública y de código abierto, que resulta de gran utilidad para el desarrollo y práctica de aplicaciones web.
