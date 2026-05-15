@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty | Explorer</title>
 
-    <!-- Google Fonts: Inter para limpieza, Creepster para toques temáticos -->
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -25,9 +25,45 @@
     </header>
 
     <main class="container">
+        <!-- Buscador y Filtros -->
+        <form id="advanced-search-form" class="search-glass">
+            <div class="search-bar">
+                <input type="text" id="search-input" name="search" placeholder="Buscar personaje por nombre..." class="glass-input">
+                <button type="button" id="btn-toggle-filters" class="btn-portal">
+                    Filtros
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 5px;"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+            </div>
+            
+            <div id="filters-container" class="filters hidden">
+                <select name="status" class="glass-select">
+                    <option value="">Estado (Todos)</option>
+                    <option value="alive">Vivo</option>
+                    <option value="dead">Muerto</option>
+                    <option value="unknown">Desconocido</option>
+                </select>
+                <select name="species" class="glass-select">
+                    <option value="">Especie (Todas)</option>
+                    <option value="Human">Humano</option>
+                    <option value="Alien">Alien</option>
+                    <option value="Humanoid">Humanoide</option>
+                    <option value="Robot">Robot</option>
+                    <option value="unknown">Desconocido</option>
+                </select>
+                <select name="gender" class="glass-select">
+                    <option value="">Género (Todos)</option>
+                    <option value="female">Femenino</option>
+                    <option value="male">Masculino</option>
+                    <option value="genderless">Sin género</option>
+                    <option value="unknown">Desconocido</option>
+                </select>
+                <button type="submit" class="btn-portal" style="justify-content: center;">Aplicar Filtros</button>
+            </div>
+        </form>
+
         <!-- Grid donde se inyectarán las tarjetas desde JS -->
         <section id="characters-grid" class="grid-layout">
-            <!-- La estructura de la tarjeta (card) generada por JS será como esta: -->
+            <!-- Tarjeta de prueba hasta implementar JS: -->
             <!--
             <article class="glass-card">
                 <div class="card-image-wrapper">
